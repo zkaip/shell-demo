@@ -56,3 +56,58 @@ Shell Study
 - `-f`: 执行一个 sed 脚本文件中的指令，例如： sed -f scriptfile file(s)
 - `-i`: 与 -e 的区别在于：当使用 -e 时，sed 执行指令并不会修改原输入文件的内容，只会显示在 bash 中，而使用 -i 选项时，sed 执行的指令会直接修改原输入文件。
 - `-n`: 读取下一行到 pattern space。
+
+## day11~day15
+**常用命令**
+**sed**
+**cut** 剪切字段
+- `-d` 后面接分隔字符。与 -f 一起使用；
+- `-f` 依据 -d 的分隔字符将一段信息分割成为数段，用 -f 取出第几段的意思；
+- `-c` 以字符 (characters) 的单位取出固定字符区间；
+
+**join** 连接字段
+`join [options...] file1 file2`
+- `-1 field1` `-2 field2` 标明要结合的字段。 -1 field 指的是从 file1 取出 field1，而 -2field2 指的则为从 file2 取出 field2。 字段编号自 1 开始，而非 0。
+- `-o file.field` 输出 file 文件中的 field 字段。 一般的字段则不打印。 除非使用多个 -o 选项，即可显示多个输出字段。
+- `-t separator` 使用 separator 作为输入字段分割字符，而非使用空白。 次字符也为输出的字段分割字符。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
